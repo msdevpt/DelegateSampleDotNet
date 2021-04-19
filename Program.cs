@@ -6,7 +6,7 @@ namespace DelegateSample
     {
         private delegate void GreetingDelegate(string msgString);
 
-        private static void GoodMoring(string yourName)
+        private static void GoodMorning(string yourName)
         {
             Console.WriteLine("Good Morning " + yourName + " !");
         }
@@ -18,7 +18,7 @@ namespace DelegateSample
         static void Main(string[] args)
         {
             Console.WriteLine("Adding 'GoodMoring' Reference to a Delegate...");
-            GreetingDelegate myGreeting = GoodMoring;
+            GreetingDelegate myGreeting = GoodMorning;
 
             // invoking the delegate
             Console.WriteLine("Invokin Delegate...");
